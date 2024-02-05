@@ -4,11 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Calculator</title>
+    <style>
+        #calcframe{
+            background-color: grey;
+            border: solid black;
+            width:240px;
+            padding-top: 2px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-radius: 5px;
+        }
+
+        input{
+            
+            font-weight: bolder;
+            font-size: large;
+            border: solid black;
+            height: 50px;
+            width: 228px
+            
+            
+        }
+
+
+
+        button{
+            padding: 20px;
+            padding-left: 20px;
+            margin-left: 5px;
+            border-radius: 5px;
+            border-color:aliceblue;
+            cursor: pointer;
+        }
+    </style>
+    <script src="calculator.js"></script>
+    
 </head>
 <body>
-    <form>
-        
-    </form>
+    <div id="calcframe">
+        <h4>Philip's Casio FX-100</h4>
+        <input id="screen" type="text" readonly><br><br>
+        <button id="clear" onclick="clr();" style="width: 230px">CLR</button><br><br>
+        <button id="one" onclick="one();">1</button>
+        <button id="two" onclick="two();">2</button>
+        <button id="three" onclick="three();">3</button>
+        <button id="divide" onclick="divide();">/</button><br><br>
+        <button id="four" onclick="four();">4</button>
+        <button id="five" onclick="five();">5</button>
+        <button id="six" onclick="six();">6</button>
+        <button id="minus" onclick="minus();">-</button><br><br>
+        <button id="seven" onclick="seven();">7</button>
+        <button id="eight" onclick="eight();">8</button>
+        <button id="nine" onclick="nine();">9</button>
+        <button id="add" onclick="add();">+</button><br><br>
+        <button id="zero" onclick="zero();">0</button>
+        <button id="dot" onclick="dot();">.</button>
+        <button id="times" onclick="times();">*</button>
+        <button id="equal" onclick="equal();">=</button>
+
+    </div>
     
 </body>
 </html>
